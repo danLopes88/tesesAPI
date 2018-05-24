@@ -20,7 +20,7 @@ var url = require('url');
 //     console.log("err", err);
 //   });
 
-//mongoose.connect('mongodb://idiamond8:idiamond88@172.27.0.0:16/Repositorio');
+//mongoose.connect('mongodb://localhost:27017/Repositorio');
 mongoose.connect('mongodb://user:123456@ds235180.mlab.com:35180/repositorio');
 var repSchema = new Schema({
   link: { type: String },

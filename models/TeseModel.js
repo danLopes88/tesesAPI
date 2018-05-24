@@ -4,7 +4,7 @@ var Schema = mongoose.Schema;
 
 
 mongoose.connect('mongodb://user:123456@ds235180.mlab.com:35180/repositorio');
-
+//mongoose.connect('mongodb://localhost:27017/Repositorio');
 //mongodb://user:pass@host:port/dbname
 var teseSchema = new Schema({
     title: String,
