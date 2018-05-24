@@ -4,7 +4,7 @@ var Schema = mongoose.Schema;
 var url = require('url');
 
 
-mongoose.connect('mongodb://127.0.0.1:27017/Repositorio');
+mongoose.connect('127.0.0.1:27017/Repositorio');
 
 
 var repSchema = new Schema({
