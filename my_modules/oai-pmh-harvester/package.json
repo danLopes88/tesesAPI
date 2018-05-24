@@ -2,7 +2,7 @@
   "name": "oai-pmh-harvester",
   "version": "1.0.0",
   "description": "OAI-PMH Harvester",
-  "main": "harvest.js",
+  "main": "./bin/www",
   "dependencies": {
     "async": "^2.6.0",
     "debug": "^3.1.0",
