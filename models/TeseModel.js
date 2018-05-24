@@ -35,11 +35,12 @@ async function getTese(teseId) {
 }
 
 async function getTeses(reqObject) {
-    console.log("keys: " + Object.keys(reqObject));
-    let parametros = Object.keys(reqObject);
-    console.dir(parametros);
+    //console.log("keys: " + Object.keys(reqObject));
+    //let parametros = Object.keys(reqObject);
+    //console.dir(parametros);
     let searchObj = {};
     if (Object.keys(reqObject).length == 0) return await Tese.find();
+
     else{
     if (reqObject.repNome){
         searchObj.repNome = {
@@ -88,7 +89,7 @@ async function getTeses(reqObject) {
     //     }
     // }
     // MyModel.find(query, function (err, data) {
-    //     // data.forEach 
+    //     // data.forEach
     // });
     return await Tese.find();
 
