@@ -2,9 +2,10 @@ const uuidv1 = require('uuid/v1');
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
-mongoose.connect('mongodb://127.0.0.1:27017/Repositorio');
 
+mongoose.connect('mongodb://user:123456@ds235180.mlab.com:35180/repositorio');
 
+//mongodb://user:pass@host:port/dbname
 var teseSchema = new Schema({
     title: String,
     creator: {
